@@ -1,4 +1,5 @@
 # Node.js Mongo RESTful API
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/madkoding/node-mongo-api.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/node-mongo-api/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/madkoding/node-mongo-api.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/node-mongo-api/context:javascript)
 
 ## Docker API and Mongo
 
