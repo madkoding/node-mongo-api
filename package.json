@@ -1,0 +1,56 @@
+{
+  "name": "nodejs-mongo-api",
+  "version": "1.0.0",
+  "description": "Node RESTful API with MongoDB",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "precommit": "lint-staged"
+  },
+  "keywords": [
+    "RESTful",
+    "Node.js",
+    "MongoDB",
+    "Mongo",
+    "Mongoose",
+    "ES6",
+    "mjs",
+    "Boilerplate"
+  ],
+  "author": "Jose Luis Gonzalez",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madkoding/nodejs-mongo-api.git"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/eslint-parser": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-airbnb": "^0.0.1-security",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.3.1",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "mongoose": "^5.12.13"
+  }
+}
