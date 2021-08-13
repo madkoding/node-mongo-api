@@ -33,18 +33,18 @@ If you wish to auto fix them just `npm run lint:fix`
 If you wish to modify the code, fork this repo and replace the api endpoints,
 and don't forget to star it ;>
 
-And then just hit the endpoint to the port 3000 as is the default setted in code,
+And then just hit the endpoint to the port 5000 as is the default setted in code,
 or the alternative is to set the `PORT` in the environment vars
 
 ## Endpoints
 
 | Method | URL | What is | Sample Data |
 | ------ | --- | ------- | ----------- |
-| GET | http://localhost:3000/colaborator | Get list | |
-| GET | http://localhost:3000/colaborator/1 | Get one by id | |
-| POST | http://localhost:3000/colaborator | Post data | `{"name":"blah", "rut": "1234"}` |
-| PUT | http://localhost:3000/colaborator/1 | Update data by id | `{"name":"blah","rut":"4321","age": 22}` |
-| DELETE | http://localhost:3000/colaborator/1 | Delete data by id |
+| GET | http://localhost:5000/colaborator | Get list | |
+| GET | http://localhost:5000/colaborator/1 | Get one by id | |
+| POST | http://localhost:5000/colaborator | Post data | `{"name":"blah", "rut": "1234"}` |
+| PUT | http://localhost:5000/colaborator/1 | Update data by id | `{"name":"blah","rut":"4321","age": 22}` |
+| DELETE | http://localhost:5000/colaborator/1 | Delete data by id |
 
 ### Mongo Dashboard (when using docker image)
 
@@ -61,5 +61,5 @@ $ docker-compose restart api
 
 | Env | Sample data |
 |-----|-------------|
-| PORT | 3000 |
-| URI  | mongodb://root:root@mongo:27017/example |
+| PORT | 5000 |
+| URI  | mongodb://root:root@localhost:27017/example |
