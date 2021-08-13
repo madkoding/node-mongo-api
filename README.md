@@ -43,7 +43,7 @@ or the alternative is to set the `PORT` in the environment vars
 | GET | http://localhost:3000/colaborator | Get list | |
 | GET | http://localhost:3000/colaborator/1 | Get one by id | |
 | POST | http://localhost:3000/colaborator | Post data | `{"name":"blah", "rut": "1234"}` |
-| PUT | http://localhost:3000/colaborator/1 | Update data by id | `{"name":"blah","rut":"4321","edad": 22}` |
+| PUT | http://localhost:3000/colaborator/1 | Update data by id | `{"name":"blah","rut":"4321","age": 22}` |
 | DELETE | http://localhost:3000/colaborator/1 | Delete data by id |
 
 ### Mongo Dashboard (when using docker image)

@@ -10,16 +10,16 @@ const ColaboratorSchema = new Schema({
     type: String,
     required: 'Require name'
   },
-  edad: {
+  age: {
     type: Number
   },
   rol: {
     type: String
   },
-  mascotas: {
+  pets: {
     type: Number
   },
-  ingreso: {
+  joined: {
     type: Date,
     default: Date.now
   },

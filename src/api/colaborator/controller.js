@@ -8,7 +8,7 @@ const showResponse = (err, res, values) => {
   res.json(values)
 }
 
-export default {
+module.exports = {
   list_all: (_req, res) => {
     Colaborator.find({}, (err, colaborator) => showResponse(err, res, colaborator))
   },

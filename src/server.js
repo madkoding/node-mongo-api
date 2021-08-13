@@ -1,13 +1,15 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import colaboratorRoute from './api/colaborator/route.mjs'
+import glob from 'glob'
+import path from 'path'
 
 const app = express()
-const port = process.env.PORT || 3000
-const uri = process.env.URI
+const PORT = process.env.PORT || 5000
+const URI = process.env.URI || 'mongodb://root:root@localhost:27017/example?authSource=admin&w=1'
 
+// Connect to MongoDB server
 mongoose
-  .connect(uri, {
+  .connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -15,6 +17,7 @@ mongoose
     console.log('Unable to connect', err)
   })
 
+// Configure Express
 app.use(express.json())
 app.use(
   express.urlencoded({
@@ -22,12 +25,11 @@ app.use(
   })
 )
 
-app.get('/', (_req, res) => {
-  res.send('API Running OK')
+glob.sync(path.join(__dirname, '/**/route.js')).forEach(file => {
+  console.log(`... Loading ${file.replace(__dirname, '')}`)
+  require(file)(app)
 })
 
-colaboratorRoute(app)
-
-app.listen(port, () => {
-  console.log(`API server started on: ${port}`)
+app.listen(PORT, () => {
+  console.log(`API server started on: ${PORT}`)
 })
