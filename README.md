@@ -65,4 +65,4 @@ $ docker-compose restart api
 | URI  | mongodb://root:root@localhost:27017/example |
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-20 02:26:15 -03
+**Última actualización:** 2026-02-20 03:21:12 -03
